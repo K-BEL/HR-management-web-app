@@ -18,12 +18,12 @@ msg.attach(MIMEText(tosend, 'html'))
 
 
 msg['Subject'] ="Email verfication"
-msg['From'] = "khalid.nanika@gmail.com"
+msg['From'] = ""
 msg['To'] = e
 
 
 s = smtplib.SMTP('smtp.gmail.com' , 587)
 s.starttls()
-s.login("khalid.nanika@gmail.com" , "khalid123456")
-s.sendmail("khalid.nanika@gmail.com",e,msg.as_string())
+s.login(" , "")
+s.sendmail("",e,msg.as_string())
 
